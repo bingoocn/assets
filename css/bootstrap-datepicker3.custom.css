@@ -1,0 +1,6 @@
+.datepicker-dropdown.datepicker-orient-top:before{
+    top: initial;
+}
+.datepicker-dropdown.datepicker-orient-top:after{
+    top: initial;
+}

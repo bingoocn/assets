@@ -1,0 +1,19 @@
+div.dataTables_wrapper div.dataTables_filter {
+  text-align: inherit;
+}
+/*datatable出现垂直方向滚动条时，tbody的顶部没有边框*/
+/* div.dataTables_scrollBody table,.DTFC_LeftBodyLiner{ */
+/* 	border-top: 1px solid #ddd; */
+/* } */
+/*datatable出现垂直方向滚动条时，thead的底部边框为1px*/
+div.dataTables_scrollHead table.table-bordered {
+    border-bottom-width: 1px;
+}
+/*自适应屏幕大小datatable时，table标签父div需要设置的class*/
+.resize-wrapper {
+	position: absolute;
+	top: 5em;
+	left: 1em;
+	right: 1em;
+	bottom: 1em;
+}

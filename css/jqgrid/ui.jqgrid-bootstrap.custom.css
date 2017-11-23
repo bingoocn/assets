@@ -1,0 +1,38 @@
+/*Grid 样式拓展及局部修改*/
+
+.ui-jqgrid .ui-jqgrid-btable tbody tr.jqgrow td.edit-cell.success {
+   padding: 2px 0;
+   vertical-align: middle;
+  /* padding-left: 2%;*/
+}
+.ui-jqgrid .ui-jqgrid-btable tbody tr td input[type="radio"],
+div.ui-th-div input[type="radio"]{
+	width: 15px;
+	height: 15px;
+}
+.ui-jqgrid .ui-jqgrid-btable tbody tr td input[type="radio"]{
+	margin-left: 8px;
+}
+div.ui-th-div input[type="radio"]{
+	margin-top: 0px;
+}
+.ui-jqgrid .ui-jqgrid-btable tbody tr.jqgrow td.edit-cell.success input[type='text'] {
+    background: white !important;
+}
+#search_result_kn{
+	display: none;
+}
+/*jqgrid复选框样式*/
+.ui-jqgrid .ui-jqgrid-view input[type='checkbox'] {
+	position: static;
+	left: initial;
+	opacity: 1;
+	margin: 0 auto;
+}
+/*jqgrid按钮样式*/
+.btn-borderLeft{
+	background-color: #5db2ff  !important;
+	border-color: #5db2ff ;
+	color: white;
+	border-left: 1px solid white !important;
+}

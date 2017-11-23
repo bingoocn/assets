@@ -1,0 +1,22 @@
+.table-striped > tbody > tr:nth-of-type(odd){
+	background-color: transparent;
+}
+.table-striped > tbody > tr:nth-of-type(even){
+	background-color: #f9f9f9;	
+}
+/*
+ * 2016-11-8
+ * 鍥尯鐢熶骇绠＄悊椤圭洰椤甸潰鏍峰紡涓埆淇敼
+ * */
+
+/*fuelux.tree 鎼滅储妗嗚儗鏅鑹蹭慨鏀�*/
+input.form-control.picker-trigger{
+	background-color: white;
+}
+/*娑堟伅鎻愮ず妯℃�佹鏄剧ず鍦ㄦ渶涓婂眰*/
+.modal.modal-message{
+	z-index:9999;
+}
+label{
+	margin-bottom:0;
+}

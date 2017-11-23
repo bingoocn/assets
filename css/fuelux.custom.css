@@ -1,0 +1,87 @@
+.fuelux .tree{
+    padding:0;
+    overflow-y: hidden;
+    overflow-x: auto;
+    margin-bottom:0;
+    cursor:default;
+}
+.fuelux .tree li{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.tree .tree-item, .tree .tree-folder .tree-folder-header{
+    padding: 0;
+}
+.fuelux .tree .tree-branch .tree-branch-header .tree-branch-name{
+	margin:-5px;
+}
+.fuelux .tree .tree-branch .tree-branch-children{
+	margin-left: 23px;	
+}
+.fuelux .tree-search{
+	height:100%;
+	overflow-y: auto;	
+}
+.fuelux .picker .picker-body.well{
+	overflow:auto;	
+}
+.tree .tree-selected{
+	background-color:#fbfbfb;	
+}
+.fuelux .tree .tree-open > .tree-branch-header .glyphicon-play{
+	transform: rotate(0);
+    -ms-transform: rotate(0);
+    -webkit-transform: rotate(0);
+    position: relative;
+}
+
+.fuelux .tree .tree-open > .tree-branch-header .glyphicon-play:before {
+ 	height: 16px;
+    width: 16px;
+    line-height: 16px;
+    vertical-align: middle;
+    display: inline-block;
+    background: url('../../assets/img/folder.png') no-repeat;
+    background-position: 2px -23px;
+    content: "";
+}
+.glyphicon-play:before{
+    height: 16px;
+    width: 16px;
+    line-height: 16px;
+    vertical-align: middle;
+    display: inline-block;
+    background: url('../../assets/img/folder.png') no-repeat;
+    background-position: 2px 0;
+    content: "";
+}
+
+.fuelux .fueluxicon-bullet:before{
+	content:""	
+}
+
+/*.glyphicon-ok:before{
+	content:""
+}*/
+
+.fuelux .tree .tree-item.tree-selected .tree-item-name, .fuelux .tree .tree-overflow.tree-selected .tree-item-name {
+	border:1px solid #FFC773;
+	border-radius:0;
+    background-color: #FFEBBF;
+}
+.fuelux .tree.tree-folder-select .tree-branch.tree-selected > .tree-branch-header .tree-branch-name {
+    border:1px solid #FFC773;
+    border-radius:0;
+    background-color: #FFEBBF;
+}
+.fuelux .tree.tree-folder-select .tree-branch.tree-selected > .tree-branch-header .tree-branch-name:hover {
+    border:1px solid #FFC773;
+    border-radius:0;
+    background-color: #FFEBBF;
+}
+.fuelux .tree .tree-item, .fuelux .tree .tree-overflow {
+    white-space: nowrap;
+    position: relative;
+    cursor: pointer;
+    margin-left: 0;
+}

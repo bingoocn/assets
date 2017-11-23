@@ -1,0 +1,622 @@
+/*清除带picker的td样式*/
+.jqgirdPicker{
+	overflow: initial !important;
+	padding-left: 0 !important;
+}
+.btn-group > .btn, .btn-group > .btn + .btn {
+	padding: 5px 8px;
+}
+/*新增页面、编辑页面可编辑的的表格样式*/
+.table_editable tr th,.table_editable tr td{
+	padding: 0 !important;
+	position: relative;
+	vertical-align: middle!important;
+}
+.table_editable .radio input[type="radio"],.table_editable .radio-inline input[type="radio"],.table_editable .checkbox input[type="checkbox"],.table_editable .checkbox-inline input[type="checkbox"] {
+	margin-left: -1px;
+}
+.table_editable tr td input,.table_editable tr td select,.table_editable tr td textarea{
+	background-color: #FFFFFF!important;
+	border-width: 0;
+}
+.table_editable tr td input:focus,.table_editable tr td select:focus,.table_editable tr td textarea:focus {
+	border-color: #66afe9!important;
+	border-width: 1px;
+	outline: 0;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6)!important;
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6)!important;
+}
+/*.table_editable tr td input[readonly],.table_editable tr td textarea[readonly]{*/
+	/*background-color: #F5F5F5!important;*/
+	/*cursor: not-allowed;*/
+/*}*/
+.table_editable tr td .radio,.table_editable tr td .checkbox{
+	float: left;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+/*表格中picker tree宽度设置*/
+.table_editable tr td .picker{
+	width: 100%;
+}
+.table_editable tr td .picker .form-inline .form-group{
+	width: 100%;
+}
+.table_editable tr td input.picker-trigger{
+	width: 100%!important;
+}
+/*表格里的文件上传样式*/
+.fileinput-btn{
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
+}
+.uploadBtn{
+	position: absolute;
+	right: 0;
+	top: 0;
+	opacity: 0;
+}
+/*表格中的radio样式*/
+.radio-box {
+	height: 35px;
+	line-height: 35px;
+	text-indent: 1em;
+}
+/*可编辑表格验证样式*/
+.table_editable .form-group{
+	margin-bottom: 0;
+}
+/*查看页面不可编辑的的表格样式*/
+.table_nonEditable tr th,.table_nonEditable tr td{
+	display: table-cell;
+	vertical-align: middle!important;
+	padding: 0px!important;
+}
+.table_nonEditable tr td span{
+	display: inline-block;
+	height: 34px;
+	line-height: 34px;
+	padding-left: 8px;
+}
+.table_nonEditable tr td textarea[readonly]{
+	background-color: #FFFFFF!important;
+	border: 0;
+	/*cursor: not-allowed;*/
+}
+/*模态框头部和底部背景颜色*/
+.modal-header,.modal-footer{
+	background-color: #f5f5f5;
+}
+/*字体颜色*/
+.blue {
+	color: #5db2ff !important
+}
+.darkorange {
+	color: #ed4e2a !important
+}
+/*各种颜色的边框*/
+.bordered-white {
+	border-color: #fff !important
+}
+
+.bordered-snow {
+	border-color: #fbfbfb !important
+}
+
+.bordered-whitesmoke {
+	border-color: #f5f5f5 !important
+}
+
+.bordered-seashell {
+	border-color: #f3f3f3 !important
+}
+
+.bordered-ivory {
+	border-color: #eee !important
+}
+
+.bordered-platinum {
+	border-color: #e5e5e5 !important
+}
+
+.bordered-lightgray {
+	border-color: #d0d0d0 !important
+}
+
+.bordered-gray {
+	border-color: #ccc !important
+}
+
+.bordered-darkgray {
+	border-color: #999 !important
+}
+
+.bordered-silver {
+	border-color: #777 !important
+}
+
+.bordered-sonic-silver {
+	border-color: #737373 !important
+}
+
+.bordered-storm-cloud {
+	border-color: #666 !important
+}
+
+.bordered-lightcarbon {
+	border-color: #555 !important
+}
+
+.bordered-carbon {
+	border-color: #444 !important
+}
+
+.bordered-slate-gray {
+	border-color: #333 !important
+}
+
+.bordered-darkcarbon {
+	border-color: #262626 !important
+}
+
+.bordered-blue {
+	border-color: #5db2ff !important
+}
+
+.bordered-info {
+	border-color: #57b5e3 !important
+}
+
+.bordered-sky {
+	border-color: #11a9cc !important
+}
+
+.bordered-primary {
+	border-color: #4374e0 !important
+}
+
+.bordered-azure {
+	border-color: #2dc3e8 !important
+}
+
+.bordered-blueberry {
+	border-color: #6f85bf !important
+}
+
+.bordered-palegreen {
+	border-color: #a0d468 !important
+}
+
+.bordered-success {
+	border-color: #53a93f !important
+}
+
+.bordered-green {
+	border-color: #8cc474 !important
+}
+
+.bordered-lightyellow {
+	border-color: #f6d52e !important
+}
+
+.bordered-yellow {
+	border-color: #ffce55 !important
+}
+
+.bordered-warning {
+	border-color: #f4b400 !important
+}
+
+.bordered-gold {
+	border-color: #f9b256 !important
+}
+
+.bordered-orange {
+	border-color: #fb6e52 !important
+}
+
+.bordered-lightred {
+	border-color: #e46f61 !important
+}
+
+.bordered-darkorange {
+	border-color: #ed4e2a !important
+}
+
+.bordered-red {
+	border-color: #df5138 !important
+}
+
+.bordered-danger {
+	border-color: #d73d32 !important
+}
+
+.bordered-pink {
+	border-color: #e75b8d !important
+}
+
+.bordered-darkpink {
+	border-color: #cc324b !important
+}
+
+.bordered-magenta {
+	border-color: #bc5679 !important
+}
+
+.bordered-purple {
+	border-color: #7e3794 !important
+}
+
+.bordered-maroon {
+	border-color: #981b48 !important
+}
+/*设置margin和padding*/
+.no-padding {
+	padding: 0 !important
+}
+
+.no-padding-bottom {
+	padding-bottom: 0 !important
+}
+
+.no-padding-top {
+	padding-top: 0 !important
+}
+
+.no-padding-left {
+	padding-left: 0 !important
+}
+
+.no-padding-right {
+	padding-right: 0 !important
+}
+
+.padding-5 {
+	padding: 5px !important
+}
+
+.padding-10 {
+	padding: 10px !important
+}
+
+.padding-20 {
+	padding: 20px !important
+}
+
+.padding-30 {
+	padding: 30px !important
+}
+
+.padding-40 {
+	padding: 40px !important
+}
+
+.padding-50 {
+	padding: 50px !important
+}
+
+.padding-left-5 {
+	padding-left: 5px !important
+}
+
+.padding-left-10 {
+	padding-left: 10px !important
+}
+
+.padding-left-20 {
+	padding-left: 20px !important
+}
+
+.padding-left-30 {
+	padding-left: 30px !important
+}
+
+.padding-left-40 {
+	padding-left: 40px !important
+}
+
+.padding-left-50 {
+	padding-left: 50px !important
+}
+
+.padding-top-5 {
+	padding-top: 5px !important
+}
+
+.padding-top-10 {
+	padding-top: 10px !important
+}
+
+.padding-top-20 {
+	padding-top: 20px !important
+}
+
+.padding-top-30 {
+	padding-top: 30px !important
+}
+
+.padding-top-40 {
+	padding-top: 40px !important
+}
+
+.padding-top-50 {
+	padding-top: 50px !important
+}
+
+.padding-right-5 {
+	padding-right: 5px !important
+}
+
+.padding-right-10 {
+	padding-right: 10px !important
+}
+
+.padding-right-20 {
+	padding-right: 20px !important
+}
+
+.padding-right-30 {
+	padding-right: 30px !important
+}
+
+.padding-right-40 {
+	padding-right: 40px !important
+}
+
+.padding-right-50 {
+	padding-right: 50px !important
+}
+
+.padding-bottom-5 {
+	padding-bottom: 5px !important
+}
+
+.padding-bottom-10 {
+	padding-bottom: 10px !important
+}
+
+.padding-bottom-20 {
+	padding-bottom: 20px !important
+}
+
+.padding-bottom-30 {
+	padding-bottom: 30px !important
+}
+
+.padding-bottom-40 {
+	padding-bottom: 40px !important
+}
+
+.padding-bottom-50 {
+	padding-bottom: 50px !important
+}
+
+.no-margin {
+	margin: 0 !important
+}
+
+.no-margin-bottom {
+	margin-bottom: 0 !important
+}
+
+.no-margin-top {
+	margin-top: 0 !important
+}
+
+.no-margin-left {
+	margin-left: 0 !important
+}
+
+.no-margin-right {
+	margin-right: 0 !important
+}
+
+.margin-5 {
+	margin: 5px !important
+}
+
+.margin-10 {
+	margin: 10px !important
+}
+
+.margin-20 {
+	margin: 20px !important
+}
+
+.margin-30 {
+	margin: 30px !important
+}
+
+.margin-40 {
+	margin: 40px !important
+}
+
+.margin-50 {
+	margin: 50px !important
+}
+
+.margin-left-5 {
+	margin-left: 5px !important
+}
+
+.margin-left-10 {
+	margin-left: 10px !important
+}
+
+.margin-left-20 {
+	margin-left: 20px !important
+}
+
+.margin-left-30 {
+	margin-left: 30px !important
+}
+
+.margin-left-40 {
+	margin-left: 40px !important
+}
+
+.margin-left-50 {
+	margin-left: 50px !important
+}
+
+.margin-top-5 {
+	margin-top: 5px !important
+}
+
+.margin-top-10 {
+	margin-top: 10px !important
+}
+
+.margin-top-20 {
+	margin-top: 20px !important
+}
+
+.margin-top-30 {
+	margin-top: 30px !important
+}
+
+.margin-top-40 {
+	margin-top: 40px !important
+}
+
+.margin-top-50 {
+	margin-top: 50px !important
+}
+
+.margin-right-5 {
+	margin-right: 5px !important
+}
+
+.margin-right-10 {
+	margin-right: 10px !important
+}
+
+.margin-right-20 {
+	margin-right: 20px !important
+}
+
+.margin-right-30 {
+	margin-right: 30px !important
+}
+
+.margin-right-40 {
+	margin-right: 40px !important
+}
+
+.margin-right-50 {
+	margin-right: 50px !important
+}
+
+.margin-bottom-5 {
+	margin-bottom: 5px !important
+}
+
+.margin-bottom-10 {
+	margin-bottom: 10px !important
+}
+
+.margin-bottom-20 {
+	margin-bottom: 20px !important
+}
+
+.margin-bottom-30 {
+	margin-bottom: 30px !important
+}
+
+.margin-bottom-40 {
+	margin-bottom: 40px !important
+}
+
+.margin-bottom-50 {
+	margin-bottom: 50px !important
+}
+/*蓝色按钮*/
+.btn-blue, .btn-blue:focus {
+	background-color: #5db2ff !important;
+	border-color: #5db2ff;
+	color: #fff
+}
+
+.btn-blue:hover {
+	color: #fff
+}
+
+.btn-blue.dropdown-toggle {
+	border-left-color: #81c1fb !important
+}
+
+.btn-blue.active {
+	background-color: #449cec !important;
+	border-color: #3d90db
+}
+
+.btn-blue.shiny {
+	background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB2aWV3Qm94PSIwIDAgMSAxIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48bGluZWFyR3JhZGllbnQgaWQ9Imxlc3NoYXQtZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPjxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiM3MGJhZmQiIHN0b3Atb3BhY2l0eT0iMSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzQ0OWNlYyIgc3RvcC1vcGFjaXR5PSIxIi8+PC9saW5lYXJHcmFkaWVudD48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2xlc3NoYXQtZ2VuZXJhdGVkKSIgLz48L3N2Zz4=);
+	background-image: -webkit-linear-gradient(linear, left top, left bottom, from(#70bafd), to(#449cec));
+	background-image: -moz-linear-gradient(linear, left top, left bottom, from(#70bafd), to(#449cec));
+	background-image: -o-linear-gradient(linear, left top, left bottom, from(#70bafd), to(#449cec));
+	background-image: linear-gradient(linear, left to bottom, left bottom, from(#70bafd), to(#449cec))
+}
+
+.btn-blue:hover, .open .btn-blue.dropdown-toggle {
+	background-color: #70bafd !important;
+	border-color: #70bafd;
+	color: #fff
+}
+
+.btn-blue.disabled, .btn-blue[disabled], fieldset[disabled] .btn-blue, .btn-blue.disabled:hover, .btn-blue[disabled]:hover, fieldset[disabled] .btn-blue:hover, .btn-blue.disabled:focus, .btn-blue[disabled]:focus, fieldset[disabled] .btn-blue:focus, .btn-blue.disabled:active, .btn-blue[disabled]:active, fieldset[disabled] .btn-blue:active, .btn-blue.disabled.active, .btn-blue[disabled].active, fieldset[disabled] .btn-blue.active {
+	background-color: #5db2ff !important;
+	border-color: #5db2ff;
+	zoom: 1;
+	filter: alpha(opacity=50);
+	-webkit-opacity: .5;
+	-moz-opacity: .5;
+	opacity: .5
+}
+/*红色按钮*/
+.btn-darkorange, .btn-darkorange:focus {
+	background-color: #ed4e2a !important;
+	border-color: #ed4e2a;
+	color: #fff
+}
+
+.btn-darkorange:hover {
+	color: #fff
+}
+
+.btn-darkorange.dropdown-toggle {
+	border-left-color: #f07154 !important
+}
+
+.btn-darkorange.active {
+	background-color: #da411f !important;
+	border-color: #cc3918
+}
+
+.btn-darkorange.shiny {
+	background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB2aWV3Qm94PSIwIDAgMSAxIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48bGluZWFyR3JhZGllbnQgaWQ9Imxlc3NoYXQtZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPjxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNlZjY5NGIiIHN0b3Atb3BhY2l0eT0iMSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2RhNDExZiIgc3RvcC1vcGFjaXR5PSIxIi8+PC9saW5lYXJHcmFkaWVudD48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2xlc3NoYXQtZ2VuZXJhdGVkKSIgLz48L3N2Zz4=);
+	background-image: -webkit-linear-gradient(linear, left top, left bottom, from(#ef694b), to(#da411f));
+	background-image: -moz-linear-gradient(linear, left top, left bottom, from(#ef694b), to(#da411f));
+	background-image: -o-linear-gradient(linear, left top, left bottom, from(#ef694b), to(#da411f));
+	background-image: linear-gradient(linear, left to bottom, left bottom, from(#ef694b), to(#da411f))
+}
+
+.btn-darkorange:hover, .open .btn-darkorange.dropdown-toggle {
+	background-color: #ef694b !important;
+	border-color: #ef694b;
+	color: #fff
+}
+
+.btn-darkorange.disabled, .btn-darkorange[disabled], fieldset[disabled] .btn-darkorange, .btn-darkorange.disabled:hover, .btn-darkorange[disabled]:hover, fieldset[disabled] .btn-darkorange:hover, .btn-darkorange.disabled:focus, .btn-darkorange[disabled]:focus, fieldset[disabled] .btn-darkorange:focus, .btn-darkorange.disabled:active, .btn-darkorange[disabled]:active, fieldset[disabled] .btn-darkorange:active, .btn-darkorange.disabled.active, .btn-darkorange[disabled].active, fieldset[disabled] .btn-darkorange.active {
+	background-color: #ed4e2a !important;
+	border-color: #ed4e2a;
+	zoom: 1;
+	filter: alpha(opacity=50);
+	-webkit-opacity: .5;
+	-moz-opacity: .5;
+	opacity: .5
+}
+.htmlModel {
+    display: none!important;
+}

@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <!--Basic Styles-->
+    <link href="../css/bootstrap.css" rel="stylesheet" />
+
+    <!--DataTable styles-->
+    <link href="../css/dataTables.bootstrap.css" rel="stylesheet" />
+	<link href="../css/select.bootstrap.css" rel="stylesheet" />
+	<link href="../css/select.bootstrap.custom.css" rel="stylesheet" />
+	<link href="../css/buttons.bootstrap.css" rel="stylesheet" />
+	<link href="../css/editor.bootstrap.css" rel="stylesheet" />
+
+</head>
+<body>
+<!-- Page Body -->
+<table id="example" class="table table-striped table-bordered" cellspacing="0" width="100%">
+       
+</table>
+<!-- /Page Body -->
+
+<!--Basic Scripts-->
+<script src="../js/jquery-2.0.3.min.js"></script>
+<script src="../js/bootstrap.js"></script>
+
+
+<!--Datatable Scripts-->
+<script src="../js/datatable/jquery.dataTables.js"></script>
+<script src="../js/datatable/dataTables.bootstrap.js"></script>
+<script src="../js/datatable/jquery.dataTables.custom.model.js"></script>
+<script src="../js/datatable/dataTables.select.js"></script>
+<script src="../js/datatable/dataTables.select.custom.js"></script>
+<script src="../js/datatable/dataTables.buttons.js"></script>
+<script src="../js/datatable/buttons.bootstrap.js"></script>
+<script src="../js/datatable/dataTables.editor.js"></script>
+<script src="../js/datatable/editor.bootstrap.js"></script>
+<script src="../js/datatable/dataTables.editor.custom.js"></script>
+<script>
+$(function(){
+	var editor = new $.fn.dataTable.Editor( {
+        table: "#example",
+		idSrc:  'id',
+		 fields: [ 
+				{label: "姓名:","name":"name"},
+				{label: "单位名称:","name":"company"},
+				{label: "职务:","name":"post"},
+				{label: "业务分工:","name":"division"},
+				{label: "办公电话:","name":"phone"},
+				{label: "手机:","name":"telephone"},
+				{label: "邮箱:","name":"email"},
+				{label: "更新时间:","name":"renew",type: "datetime"},
+				{label: "备注:","name":"remark"}
+		 ]
+    } );
+	$('#example').on( 'click', 'tbody td:not(:first-child)', function (e) {
+        editor.inline( this );
+    } );
+	var table = $('#example').DataTable({
+			columnDefs: [ {
+				orderable: false,
+				className: 'select-checkbox',
+				targets:   0
+			} ],
+			select: {
+				style:    'os',
+				selector: 'td:first-child'
+			},
+			dom: 'Bfrtip',
+			buttons: [
+            { extend: "create", editor: editor },
+            { extend: "edit",   editor: editor },
+            { extend: "remove", editor: editor }
+			],
+			order: [[ 1, 'asc' ]],
+			data:[
+				{"id": "row_1","name":"吕一","company":"兵科院","post":"处长","division":"成本核算","phone":"0123-11111165","telephone":"23786834001","email":"zyxwv1@sss.com","renew":"2016-01-01","remark":""},
+				{"id": "row_2","name":"吕二","company":"兵科院","post":"副处	长","division":"成本核算","phone":"0123-11111165","telephone":"23786834001","email":"zyxwv1@sss.com","renew":"2016-01-01","remark":""},
+				{"id": "row_3","name":"吕三","company":"兵科院","post":"科长","division":"成本核算","phone":"0123-11111165","telephone":"23786834001","email":"zyxwv1@sss.com","renew":"2016-01-01","remark":""},
+				{"id": "row_4","name":"武一","company":"兵科院","post":"副科长","division":"成本核算","phone":"0123-11111165","telephone":"23786834001","email":"zyxwv1@sss.com","renew":"2016-01-01","remark":""},
+				{"id": "row_5","name":"武二","company":"兵科院","post":"总会计师","division":"成本核算","phone":"0123-11111165","telephone":"23786834001","email":"zyxwv1@sss.com","renew":"2016-01-01","remark":""},
+				{"id": "row_6","name":"武三","company":"兵科院","post":"副总会计师","division":"成本核算","phone":"0123-11111165","telephone":"23786834001","email":"zyxwv1@sss.com","renew":"2016-01-01","remark":""},
+				{"id": "row_7","name":"张三","company":"兵科院","post":"副总经理","division":"成本核算","phone":"0123-11111165","telephone":"23786834001","email":"zyxwv1@sss.com","renew":"2016-01-01","remark":""}
+			],
+			searching:false,
+			columns: [
+				{"title":"","data":"",defaultContent: "",className: 'select-checkbox'},
+				{"title":"姓名","data":"name"},
+				{"title":"单位名称","data":"company"},
+				{"title":"职务","data":"post","orderable": false},
+				{"title":"业务分工","data":"division","orderable": false},
+				{"title":"办公电话","data":"phone","orderable": false},
+				{"title":"手机","data":"telephone","orderable": false},
+				{"title":"邮箱","data":"email","orderable": false},
+				{"title":"更新时间","data":"renew"},
+				{"title":"备注","data":"remark","orderable": false}
+			]
+	});
+})
+</script>
+</body>
+</html>

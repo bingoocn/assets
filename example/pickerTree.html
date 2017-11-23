@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <!--Basic Styles-->
+    <link href="../css/bootstrap.css" rel="stylesheet" />
+    <link href="../css/fuelux.css" rel="stylesheet" />
+    <link href="../css/picker.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/ztree/metroStyle/metroStyle.css">
+</head>
+
+<body>
+    <!-- Page Body -->
+    <div class="thin-box">
+        <input id="org" name="org" value="1"/>
+    </div>
+    <!-- /Page Body -->
+    <!--Basic Scripts-->
+    <script src="../js/jquery-2.0.3.min.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <!--fuelux Scripts-->
+    <script src="../js/fuelux/picker.js"></script>
+    <script src="../js/fuelux/tree.js"></script>
+    <script src="../js/ztree/jquery.ztree.all.js"></script>
+    <script src="../js/cngc.js"></script>
+    <script>
+    + function($, cngc) {
+        'use strict';
+        $(function() {
+            var zNodesClassical = [{
+                id: 1,
+                pId: 0,
+                name: "通知类别",
+                open: true
+            }, {
+                id: 101,
+                pId: 1,
+                name: "合同类"
+            }, {
+                id: 102,
+                pId: 1,
+                name: "调度类"
+            }, {
+                id: 103,
+                pId: 1,
+                name: "统计类"
+            }, {
+                id: 104,
+                pId: 1,
+                name: "消息类"
+            }, {
+                id: 105,
+                pId: 1,
+                name: "其他类"
+            }];
+            new cngc.pickerTree({
+                id: "org",
+                nodes: zNodesClassical,
+                check: {
+                    enable: false
+                },
+                /*selected: 103,*/
+                view: {
+                    dblClickExpand: false,
+                    showLine: true,
+                    selectedMulti: false
+                },
+                data: {
+                    simpleData: {
+                        enable: true,
+                        idKey: "id",
+                        pIdKey: "pId",
+                        rootPId: ""
+                    }
+                }
+            });
+        });
+    }(jQuery, cngc);
+    </script>
+</body>
+
+</html>

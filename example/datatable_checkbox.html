@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <!--Basic Styles-->
+    <link href="../css/bootstrap.css" rel="stylesheet" />
+
+    <!--DataTable styles-->
+    <link href="../css/dataTables.bootstrap.css" rel="stylesheet" />
+	<link href="../css/select.bootstrap.css" rel="stylesheet" />
+	<link href="../css/select.bootstrap.custom.css" rel="stylesheet" />
+	<link href="../css/buttons.bootstrap.css" rel="stylesheet" />
+	<link href="../css/fixedColumns.bootstrap.css" rel="stylesheet" />
+
+</head>
+<body>
+<!-- Page Body -->
+<table id="example" class="table table-striped table-bordered" cellspacing="0" width="100%">
+       
+</table>
+<!-- /Page Body -->
+
+<!--Basic Scripts-->
+<script src="../js/jquery-2.0.3.min.js"></script>
+<script src="../js/bootstrap.js"></script>
+
+
+<!--Datatable Scripts-->
+<script src="../js/datatable/jquery.dataTables.js"></script>
+<script src="../js/datatable/dataTables.bootstrap.js"></script>
+<script src="../js/datatable/jquery.dataTables.custom.model.js"></script>
+<script src="../js/datatable/dataTables.select.js"></script>
+<script src="../js/datatable/dataTables.select.custom.js"></script>
+<script src="../js/datatable/dataTables.buttons.js"></script>
+<script src="../js/datatable/buttons.bootstrap.js"></script>
+<script src="../js/datatable/dataTables.fixedColumns.js"></script>
+
+<script>
+$(function(){
+	var table = $('#example').DataTable({
+				columnDefs: [ {
+					orderable: false,
+					className: 'select-checkbox',
+					targets:   0
+				} ],
+				select: {
+					style:    'os',
+					selector: 'td:first-child'
+				},
+				dom: 'Bfrtip',
+				buttons: [
+					{
+						text: 'delete',
+						action: function () {
+							table.rows( { selected: true } ).remove().draw();
+						}
+					}
+				],
+				order: [[ 1, 'asc' ]],
+				fixedColumns:{leftColumns:3},
+				scrollX:true,
+                data:[
+                    {"name":"吕一","company":"兵科院","post":"处长","division":"成本核算","phone":"0123-11111165","telephone":"23786834001","email":"zyxwv1@sss.com","renew":"2016-01-01","remark":""},
+                    {"name":"吕二","company":"兵科院","post":"副处	长","division":"成本核算","phone":"0123-11111165","telephone":"23786834001","email":"zyxwv1@sss.com","renew":"2016-01-01","remark":""},
+                    {"name":"吕三","company":"兵科院","post":"科长","division":"成本核算","phone":"0123-11111165","telephone":"23786834001","email":"zyxwv1@sss.com","renew":"2016-01-01","remark":""},
+                    {"name":"武一","company":"兵科院","post":"副科长","division":"成本核算","phone":"0123-11111165","telephone":"23786834001","email":"zyxwv1@sss.com","renew":"2016-01-01","remark":""},
+                    {"name":"武二","company":"兵科院","post":"总会计师","division":"成本核算","phone":"0123-11111165","telephone":"23786834001","email":"zyxwv1@sss.com","renew":"2016-01-01","remark":""},
+                    {"name":"武三","company":"兵科院","post":"副总会计师","division":"成本核算","phone":"0123-11111165","telephone":"23786834001","email":"zyxwv1@sss.com","renew":"2016-01-01","remark":""},
+                    {"name":"张三","company":"兵科院","post":"副总经理","division":"成本核算","phone":"0123-11111165","telephone":"23786834001","email":"zyxwv1@sss.com","renew":"2016-01-01","remark":""},
+                    {"name":"张思","company":"兵科院","post":"","division":"成本核算","phone":"0123-11111165","telephone":"23786834001","email":"zyxwv1@sss.com","renew":"2016-01-01","remark":""},
+                    {"name":"张武","company":"兵科院","post":"","division":"成本核算","phone":"0123-11111165","telephone":"23786834001","email":"zyxwv1@sss.com","renew":"2016-01-01","remark":""},
+                    {"name":"李斯","company":"兵科院","post":"","division":"成本核算","phone":"0123-11111165","telephone":"23786834001","email":"zyxwv1@sss.com","renew":"2016-01-01","remark":""},
+                    {"name":"李木子","company":"兵科院","post":"","division":"成本核算","phone":"0123-11111165","telephone":"23786834001","email":"zyxwv1@sss.com","renew":"2016-01-01","remark":""},
+                    {"name":"李白","company":"兵科院","post":"","division":"成本核算","phone":"0123-11111165","telephone":"23786834001","email":"zyxwv1@sss.com","renew":"2016-01-01","remark":""},
+                    {"name":"王源","company":"兵科院","post":"","division":"成本核算","phone":"0123-11111165","telephone":"23786834001","email":"zyxwv1@sss.com","renew":"2016-01-01","remark":""},
+                    {"name":"王涛","company":"兵科院","post":"","division":"成本核算","phone":"0123-11111165","telephone":"23786834001","email":"zyxwv1@sss.com","renew":"2016-01-01","remark":""},
+                    {"name":"王鹏","company":"兵科院","post":"","division":"成本核算","phone":"0123-11111165","telephone":"23786834001","email":"zyxwv1@sss.com","renew":"2016-01-01","remark":""},
+                    {"name":"陆逊","company":"兵科院","post":"","division":"成本核算","phone":"0123-11111165","telephone":"23786834001","email":"zyxwv1@sss.com","renew":"2016-01-01","remark":""},
+                    {"name":"卢湾","company":"兵科院","post":"","division":"成本核算","phone":"0123-11111165","telephone":"23786834001","email":"zyxwv1@sss.com","renew":"2016-01-01","remark":""},
+                    {"name":"陈旭","company":"兵科院","post":"","division":"成本核算","phone":"0123-11111165","telephone":"23786834001","email":"zyxwv1@sss.com","renew":"2016-01-01","remark":""},
+                    {"name":"陈楠","company":"兵科院","post":"","division":"成本核算","phone":"0123-11111165","telephone":"23786834001","email":"zyxwv1@sss.com","renew":"2016-01-01","remark":""},
+                    {"name":"陈晨","company":"兵科院","post":"","division":"成本核算","phone":"0123-11111165","telephone":"23786834001","email":"zyxwv1@sss.com","renew":"2016-01-01","remark":""},
+                    {"name":"陈静","company":"兵科院","post":"","division":"成本核算","phone":"0123-11111165","telephone":"23786834001","email":"zyxwv1@sss.com","renew":"2016-01-01","remark":""},
+                    {"name":"刘冬","company":"兵科院","post":"","division":"成本核算","phone":"0123-11111165","telephone":"23786834001","email":"zyxwv1@sss.com","renew":"2016-01-01","remark":""},
+                    {"name":"刘峰","company":"兵科院","post":"","division":"成本核算","phone":"0123-11111165","telephone":"23786834001","email":"zyxwv1@sss.com","renew":"2016-01-01","remark":""},
+                    {"name":"刘婷","company":"兵科院","post":"","division":"成本核算","phone":"0123-11111165","telephone":"23786834001","email":"zyxwv1@sss.com","renew":"2016-01-01","remark":""},
+                    {"name":"白丽","company":"兵科院","post":"","division":"成本核算","phone":"0123-11111165","telephone":"23786834001","email":"zyxwv1@sss.com","renew":"2016-01-01","remark":""},
+                    {"name":"白居易","company":"兵科院","post":"","division":"成本核算","phone":"0123-11111165","telephone":"23786834001","email":"zyxwv1@sss.com","renew":"2016-01-01","remark":""},
+                    {"name":"白白","company":"兵科院","post":"","division":"成本核算","phone":"0123-11111165","telephone":"23786834001","email":"zyxwv1@sss.com","renew":"2016-01-01","remark":""},
+                    {"name":"白天","company":"兵科院","post":"","division":"成本核算","phone":"0123-11111165","telephone":"23786834001","email":"zyxwv1@sss.com","renew":"2016-01-01","remark":""}
+                ],
+                searching:false,
+                displayLength: 10,
+                columns: [
+					{"title":"","data":"",defaultContent: "",className: 'select-checkbox'},
+                    {"title":"姓名","data":"name"},
+                    {"title":"单位名称","data":"company"},
+                    {"title":"职务","data":"post","orderable": false},
+                    {"title":"业务分工","data":"division","orderable": false},
+                    {"title":"办公电话","data":"phone","orderable": false},
+                    {"title":"手机","data":"telephone","orderable": false},
+                    {"title":"邮箱","data":"email","orderable": false},
+                    {"title":"更新时间","data":"renew"},
+                    {"title":"备注","data":"remark","orderable": false}
+                ]
+	});
+})
+</script>
+</body>
+</html>

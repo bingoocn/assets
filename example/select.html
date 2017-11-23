@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <!--Basic Styles-->
+    <link href="../css/bootstrap.css" rel="stylesheet" />
+    <link href="../css/select2.css" rel="stylesheet" />
+    <link href="../css/select2-bootstrap.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- Page Body -->
+    <select id="org" name="org" value="1"/>
+    <!-- /Page Body -->
+    <!--Basic Scripts-->
+    <script src="../js/jquery-2.0.3.min.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <!--fuelux Scripts-->
+    <script src="../js/cngc.js"></script>
+    <script src="../js/select2/select2.js"></script>
+    <script>
+    + function($, cngc) {
+        'use strict';
+        $(function() {
+            new cngc.select({
+                id: '#org',
+                url: 'http://localhost:7890/data/select_data.json',
+                width: 100/*,
+                selected: 2*/
+            });
+        });
+    }(jQuery, cngc);
+    </script>
+</body>
+
+</html>

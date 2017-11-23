@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="../css/bootstrap.css" rel="stylesheet" />
+    <link href="../css/beyond.min.css" rel="stylesheet" />
+    <link href="../css/font-awesome.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- Page Body -->
+    <div id="cngc-alert-success" class="modal modal-message modal-success fade" style="display: none;" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <i class="glyphicon glyphicon-check"></i>
+                </div>
+                <div class="modal-body" name="message"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-dismiss="modal">OK</button>
+                </div>
+            </div>
+            <!-- / .modal-content -->
+        </div>
+        <!-- / .modal-dialog -->
+    </div>
+    <div id="cngc-alert-info" class="modal modal-message modal-info fade" style="display: none;" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <i class="fa fa-envelope"></i>
+                </div>
+                <div class="modal-body" name="message"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-info" data-dismiss="modal">OK</button>
+                </div>
+            </div>
+            <!-- / .modal-content -->
+        </div>
+        <!-- / .modal-dialog -->
+    </div>
+    <div id="cngc-alert-warn" class="modal modal-message modal-warning fade" style="display: none;" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <i class="fa fa-warning"></i>
+                </div>
+                <div class="modal-body" name="message"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-warning" data-dismiss="modal">OK</button>
+                </div>
+            </div>
+            <!-- / .modal-content -->
+        </div>
+        <!-- / .modal-dialog -->
+    </div>
+    <!-- /Page Body -->
+    <!--Basic Scripts-->
+    <script src="../js/jquery.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <script src="../js/cngc.js"></script>
+    <script src="../js/bootbox/bootbox.js"></script>
+    <script>
+    ! function() {
+        'use strict';
+        $(function() {
+            cngc.warn('保存失败!');
+            cngc.info('正在保存!');
+            cngc.success('保存成功!');
+            bootbox.confirm({
+                title: '',
+                message: 'xxxxxxx',
+                buttons: {
+                    confirm: {
+                        label: '确定'
+                    },
+                    cancel: {
+                        label: '取消'
+
+                    }
+                },
+                callback: function(r){
+                    alert(r);
+                }
+            });
+        });
+    }();
+    </script>
+</body>
+
+</html>
